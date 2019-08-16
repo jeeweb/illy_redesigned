@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title> illy 공식사이트 </title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/html5shiv.min.js"></script>
+    <![endif]-->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/gnb.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#content .slider').bxSlider({
+                mode: 'fade',
+                auto: true,
+                pause: 4000,
+                controls: true,
+                prevText: '이전 보기',
+                nextText: '다음 보기',
+                pager: true,
+                autoHover: true
+            });
+        });
+    </script>
+</head>
+<body data-dep-one="0" data-dep-two="0">
+    <div id="skip">
+        <a href="">본문 바로가기</a>
+    </div>
+
+    <header id="header">
+        <h1 class="logo">
+            <a href="index.html"><img src="images/common/logo.jpg" alt="일리" width="60" height="60"></a></h1>
+        <nav id="gnb">
+            <ul>
+                <li class="gnb1">
+                    <a href="brand/history.html">BRAND</a>
+                    <ul>
+                        <li><a href="#">Who We Are</a></li>
+                        <li><a href="brand/history.html">History</a></li>
+                        <li><a href="#">Quality</a></li>
+                        <li><a href="#">UDC</a></li>
+                        <li><a href="#">Korea Franchise Partner</a></li>
+                    </ul>
+                </li>
+                <li class="gnb2">
+                    <a href="product/coffee.html">PRODUCT</a>
+                    <ul>
+                        <li><a href="product/coffee.html">Coffee</a></li>
+                        <li><a href="#">Machine</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Illy Art Collection</a></li>
+                    </ul>
+                </li>
+                <li class="gnb3">
+                    <a href="#">MENU</a>
+                    <ul>
+                        <li><a href="#">Drink</a></li>
+                        <li><a href="#">Food</a></li>
+                        <li><a href="#">Wine</a></li>
+                    </ul>
+                </li>
+                <li class="gnb4">
+                    <a href="#">NEWS</a>
+                </li>
+                <li class="gnb5">
+                    <a href="#">STORE</a>
+                    <ul>
+                        <li><a href="#">Illy Caffe</a></li>
+                        <li><a href="#">Illy Shop</a></li>
+                        <li><a href="#">Local Dealer</a></li>
+                        <li><a href="#">Franchise</a></li>
+                    </ul>
+                </li>
+                <li class="gnb6">
+                    <a class="shortcut" href="http://shop.illycaffe.co.kr">구매하기</a>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="content">
+        <h2 class="blind">베스트제품, 이벤트, SNS현황, 뉴스를 확인할 수 있는 메인페이지</h2>
+        <article class="cnt" id="cnt1">
+            <h3 class="blind">이벤트 및 공지사항</h3>
+            <ul class="slider p_r">
+                <li class="list1">
+                    <div class="list1_txt area">
+                        <p class="list_tit">Francis Francis X1<span class="f_red">재입고 기념 이벤트</span></p>
+                        <p class="list_date">2019.06.01 ~ 2019.06.30</p>
+                        <a href="#" class="btn_more">알아보기</a>
+                    </div>
+                </li>
+                <li class="list2">
+                    <div class="list2_txt">
+                        <p class="list_tit">일리카페와 함께하는<span class="f_red">홈 카페 클래스</span></p>
+                        <a href="#" class="btn_more">예약하기</a>
+                    </div>
+                </li>
+            </ul>
+        </article>
+
+        <article class="cnt" id="cnt2">
+            <h3 class="cnt_tit"><span class="f_red">BEST </span>ITEM</h3>
+            <p>일리커피의 베스트 판매제품을 소개합니다.</p>
+            <div class="best area">
+                <ul class="best_tab clear p_r">
+                    <li>
+                        <button type="button" id="tab1">Coffee</button>
+                        <ul class="btn_tab1">
+                            <li class="best1_1">
+                                <a href="">
+                                    <p class="best_ctg">Ground Coffee</p>
+                                    <p class="best_name classico">클라시코</p>
+                                    <p class="detail_txt">벨벳처럼 부드럽고<br>완벽하게 균형 잡힌 맛의<br>클래식 로스트</p>
+                                    <img src="images/main/best1_1.png" alt="">
+                                </a>
+                            </li>
+                            <li class="best1_2">
+                                <a href="">
+                                    <p class="best_ctg">Whole Bean</p>
+                                    <p class="best_name intenso">인텐소</p>
+                                    <p class="detail_txt">풍부하고 진한 맛의<br>볼드 로스트</p>
+                                    <img src="images/main/best1_2.png" alt="">
+                                </a>
+                            </li>
+                            <li class="best1_3">
+                                <a href="">
+                                    <p class="best_ctg">Iperespresso Capsule</p>
+                                    <p class="best_name decaff">디카페인</p>
+                                    <p class="detail_txt">디카페인 커피로,<br>깊고 부드러운 맛의<br>클래식 로스트</p>
+                                    <img src="images/main/best1_3.png" alt="">
+                                </a>
+                            </li>
+                            <li class="best1_4">
+                                <a href="">
+                                    <p class="best_ctg">Monoarabica Capsule</p>
+                                    <p class="best_name brasile">브라질</p>
+                                    <p class="detail_txt">강렬한 아로마와<br>벨벳 같이 부드럽고 풍부한 바디감,<br>다크초콜릿의 달콤함과 카라멜,<br>구운 빵 등의 강한 향미</p>
+                                    <img src="images/main/best1_4.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button type="button" id="tab2">Machine</button>
+                        <ul class="btn_tab2">
+                            <li class="best2_1">
+                                <a href="">
+                                    <p class="best_ctg">Ground Coffee</p>
+                                    <p class="best_name">클라시코</p>
+                                    <p class="detail_txt">벨벳처럼 부드럽고<br>완벽하게 균형 잡힌 맛의<br>클래식 로스트</p>
+                                    <img src="images/main/best1_1.png" alt="">
+                                </a>
+                            </li>
+                            <li class="best2_2">
+                                <a href="">
+                                    <p class="best_ctg">Whole Bean</p>
+                                    <p class="best_name">인텐소</p>
+                                    <p class="detail_txt">풍부하고 진한 맛의<br>볼드 로스트</p>
+                                    <img src="images/main/best1_2.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button type="button" id="tab2">기타제품</button>
+                        <ul class="btn_tab3">
+                            <li class="best3_1">
+                                <a href="">
+                                    <p class="best_ctg">Ground Coffee</p>
+                                    <p class="best_name">클라시코</p>
+                                    <p class="detail_txt">벨벳처럼 부드럽고<br>완벽하게 균형 잡힌 맛의<br>클래식 로스트</p>
+                                    <img src="images/main/best1_3.png" alt="">
+                                </a>
+                            </li>
+                            <li class="best3_2">
+                                <a href="">
+                                    <p class="best_ctg">Whole Bean</p>
+                                    <p class="best_name">인텐소</p>
+                                    <p class="detail_txt">풍부하고 진한 맛의<br>볼드 로스트</p>
+                                    <img src="images/main/best1_4.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </article>
+        
+        <article class="cnt" id="cnt3">
+            <div class="banner1">
+                <div class="banner_txt">
+                    <h3>85년 역사와 품질로 우수성을 인정받고 있는<span class="f_red">이탈리아 프리미엄 커피 브랜드 일리</span></h3>
+                    <p>이탈리아 정통 에스프레소의 풍미와 향의 세계로 당신을 초대합니다.</p>
+                    <a href="#" class="btn_more">알아보기</a>
+                </div>
+            </div>
+        </article>
+        
+        <article class="cnt" id="cnt4">
+            <h3 class="cnt_tit">NOW, <span class="f_red">illy</span></h3>
+            <p>인스타그램에서 일리커피를 만나보세요.</p>
+            <ul class="sns clear area">
+                <li>
+                    <a href="#"><img src="images/main/sns1.jpg" alt="일리카페 여의도점 오픈행사"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/main/sns2.jpg" alt="자전거 앞 바구니에 담겨있는 일리커피머신"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/main/sns3.jpg" alt="진정한 이탈리아 커피의 대명사 일리를 여의도에서 만나다. 2019.5.27 오후3시부터 4시반까지 일리카페 여의도점 오픈행사에 여러분을 초대합니다."></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/main/sns4.jpg" alt="Grand Open 여의도점, 서울시 영등포구 의사당대로 127, 1층 1-107호 (여의도동, 롯데캐슬 엠파이어)"></a>
+                </li>
+                <li class="pt26">
+                    <a href="#"><img src="images/main/sns5.jpg" alt="5월 가정의달 이벤트 일리샵 웨딩 프로모션. 2019년 5월 1일 수요일부터 5월 31일 금요일까지 진행"></a>
+                </li>
+                <li class="pt26">
+                    <a href="#"><img src="images/main/sns6.jpg" alt="일리 에스프레소와 달콤한 아이스크림의 만남, 아포가또"></a>
+                </li>
+                <li class="pt26">
+                    <a href="#"><img src="images/main/sns7.jpg" alt="가장 완벽한 커피 + 물 = 일리 에스프레소"></a>
+                </li>
+                <li class="pt26">
+                    <a href="#"><img src="images/main/sns8.jpg" alt="오늘도 나만의 홈 카페로 일리커피를 즐겨보세요"></a>
+                </li>
+            </ul> 
+        </article>
+        
+        <article class="cnt" id="cnt5">
+            <div class="banner2">
+                <div class="banner_txt">
+                    <h3>나의 일상이 되는 또 다른 공간<span class="f_red">커피 한 잔의 여유를 만나는 일리카페</span></h3>
+                    <p>고객님과 가장 가까이 있는 매장을 찾아보세요! </p>
+                    <a href="#" class="btn_more">알아보기</a>
+                </div>
+            </div>
+        </article>
+        
+        <article class="cnt area clear" id="cnt6">
+            <div id="news" class="cnt6_tit p_r">
+                <h3>NEWS</h3>
+                <ul>
+                    <li>
+                        <p>Y3.2 화이트 머신 예약 판매</p>
+                        <span>2019.06.06</span>
+                    </li>
+                    <li>
+                        <p>여의도에 '푸드 플래그십 스토어' 개장</p>
+                        <span>2019.05.20</span>
+                    </li>
+                    <li>
+                        <p>일리카페 대표 바리스타 '파브리지오 아퀘', 여의도서 이탈리안 커피 푸드 페어링 퍼포먼스 펼쳐</p>
+                        <span>2019.05.20</span>
+                    </li>
+                    <li>
+                        <p>일리카페, 미국식 아닌 전통 이탈리아 커피문화 알린다</p>
+                        <span>2019.05.17</span>
+                    </li>
+                    <li>
+                        <p>85년 전통 이탈리아 커피 '일리', 대중 속으로</p>
+                        <span>2019.05.01</span>
+                    </li>
+                    <li>
+                        <p>대학로점 오픈. 할인 및 경품증정 이벤트</p>
+                        <span>2019.04.11</span>
+                    </li>
+                </ul>
+                <a href="#" class="btn_plus p_a">더보기</a>
+            </div>
+            <div id="cs" class="cnt6_tit p_r">
+                <h3>CS CENTER</h3>
+                <div class="contact">
+                    <strong class="f_red">1666-1282</strong>
+                    <p>평일  9:00 - 18:00<br>점심시간  11:30 - 12:30<br>주말, 공휴일 휴무</p>
+                    <a href="mailto:cs@curoholdings.com">cs@curoholdings.com</a>
+                </div> 
+                <div class="btn_site">
+                    <button type="button" class="shop"><i class="fas fa-shopping-bag"></i>공식 구매사이트</button>
+                    <button type="button" class="global"><i class="fas fa-globe"></i> 글로벌 사이트</button>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <footer id="footer">
+        <img src="images/common/logo_foot.jpg" alt="">
+        <address>(주)큐로에프앤비<br>대표자 | 조중기    주소 | 서울시 강남구 테헤란로 77길 7, 동원빌딩 2층<br>대표전화 | 02-3460-4960    팩스 | 02-3460-4966    이메일 | <a href="mailto:cs@curoholdings.com">cs@curoholdings.com</a></address>
+        <p>Copyright&copy; www.illycaffe.co.kr. All rights reserved.</p>
+    </footer>
+</body>
+</html>
