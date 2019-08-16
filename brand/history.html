@@ -61,12 +61,6 @@
                 var $tg = $($(this).attr("href"));
                 $("html, body").stop().animate({scrollTop: $tg.offset().top});
 
-                //클릭한 영역으로 focus 강제 이동
-                $tg.attr("tabIndex", 0).focus();
-                $tg.on("blur", function () {
-                    $(this).removeAttr("tabIndex");
-                });
-
                 return false;
             });
 
