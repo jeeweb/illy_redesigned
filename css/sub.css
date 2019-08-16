@@ -1,0 +1,88 @@
+@charset "utf-8";
+/* ================== 모든 서브 공통 스타일 ================== */
+.tit_bg{background: no-repeat 50% 0;height: 550px;text-align: center;z-index: 100}
+.tit_bg h2{font-family: NotoSansB;font-size: 75px;letter-spacing: 5px;line-height: 550px}
+
+/* ====================== history.html ======================= */
+/* #titHis */
+#titHis{background-image: url("../images/brand/title_history.jpg")}
+#titHis:after{content: "";position: absolute;left: 0;right: 0;top: 550px;height: 200px;background: #ee1c25;}
+#titHis .year_indic{z-index: 10;width: 100%;text-align: center}
+#titHis .year_indic p{position:absolute;top: 60px;float: left;left:50%;font-size: 23px}
+#titHis .year_indic .ctg1{margin-left: -330px}
+#titHis .year_indic .ctg2{margin-left: 185px}
+#titHis .year_indic p a{display: block;position: absolute;top: 60px;width: 20px; height: 20px;left: 50%;margin-left: -10px}
+#titHis .year_indic p a:after{content:"";position: absolute;top: -7px;left: -7px;width: 30px;height: 30px;border: 2px solid transparent;-webkit-border-radius: 50%;-moz-border-radius: 50%;border-radius: 50%;-webkit-transition: border-color 0.5s;-moz-transition: border-color 0.5s;-o-transition: border-color 0.5s;transition: border-color 0.5s}
+#titHis .year_indic p a:hover:after,#titHis .year_indic p a:focus:after{border-color: #fff}
+#titHis .year_indic:after{content: "";display:block;position: absolute;top: 128px;left: 50%;margin-left: -250px;background: #fff;width: 500px;height: 4px;}
+
+/* #cntHist */
+#cntHist{padding-top: 200px}
+#cntHist:after{content: "";display: block;position:absolute;top: 300px;left:50%;margin-left: -1px;width: 2px; height: 10000px;background: #333}
+#cntHist>div{width: 607px;margin-bottom: 40px}
+#cntHist .today{margin-top: 145px}
+#cntHist>div:after{content: "";display: block;clear: both}
+#cntHist div .year{position:relative;font-family: NotoSansB;font-size: 40px;line-height: 1.1}
+#cntHist div .year:after{content: "";position:absolute;width: 14px;height: 14px;top: 50%;margin-left: -7px;background: #333;-webkit-border-radius: 50%;-moz-border-radius: 50%;border-radius: 50%}
+#cntHist .odd .year{float: right;margin: 0 35px 0 38px}
+#cntHist .odd .year:after{right: -35px}
+#cntHist .odd .his_txt{float: left;text-align: right}
+#cntHist .even{position:relative;left: 50%}
+#cntHist .even .year{float: left;margin: 0 38px 0 35px}
+#cntHist .even .year:after{left: -35px}
+#cntHist .even .his_txt{float: left}
+#cntHist div .his_txt{max-width: 430px}
+#cntHist div.today .his_txt{width: 400px}
+#cntHist div .his_txt strong{font-size: 25px;line-height: 1.1}
+#cntHist div .his_txt p{font-size: 16px;font-family: NotoSansL;line-height: 24px;padding: 10px 0 30px 0 }
+#cntHist div .his_txt p span{font-family: NotoSansB}
+#cntHist .top_btn{position:fixed;right:0;bottom: 100px;width: 30px; height: 18px;;font-family: NotoSansB;font-size: 15px;color: #ee1c25;text-align: center;padding-top: 20px; background: url("../images/brand/btn_top.png") no-repeat 50% 0}
+
+/* ==================== coffee.html ======================= */
+
+
+/* #titCof */
+#titCof{background-image: url("../images/product/title_coffee.jpg")}
+
+/* #mainTab */
+#mainTab{position: relative;width: 1200px;height: 814px;margin: 80px auto;text-align: center}
+#mainTab ul li{float: left}
+#mainTab ul li .btn_cof{display: block;position: relative;width: 200px;height: 160px;border-bottom: 1px solid #999;font-size: 16px;overflow: hidden}
+#mainTab>ul>li>.btn_cof>*{position:absolute;bottom: 0}
+#mainTab ul li .btn_cof img{display: block}
+#mainTab ul li .btn_cof .over{left: 0;right: 0;bottom: -30px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;opacity: 0;filter: alpha(opacity=0);-webkit-transition: bottom 0.5s;-moz-transition: bottom 0.5s;-o-transition: bottom 0.5s;transition: bottom 0.5s}
+#mainTab ul li .btn_cof:hover .over,#mainTab ul li .btn_cof:focus .over{opacity: 1;filter: alpha(opacity=100);bottom: -12px;}
+
+#mainTab ul li .type{position: absolute;top: 210px;left: 0;width: 1200px;height: 666px;text-align: center}
+#mainTab ul li .type h3{font-family: NotoSansB;font-size: 45px}
+#mainTab ul li .type h3+p{font-family: NotoSansL;line-height: 25px;padding: 20px 0 40px}
+#mainTab ul .tab3 .type h3{margin-bottom: 50px}
+#mainTab ul .tab4 .type ul li{width: 100%;margin: 0 auto}
+#mainTab ul li div ul li,.featherlight .featherlight-content .featherlight-inner ul li{font-size: 20px}
+#mainTab ul li div ul li strong,#mainTab ul li div ul li span{display: block;}
+#mainTab ul .tab4 .type ul li strong,#mainTab ul .tab5 .type ul li strong{margin-top: 25px}
+#mainTab ul li div ul li span,.featherlight .featherlight-content .featherlight-inner ul li span{font-size: 15px;line-height: 1.5;margin-top: 10px}
+#mainTab ul li div ul li .addition,.featherlight .featherlight-content .featherlight-inner ul li .addition{font-size: 12px;font-family: NotoSansL}
+#mainTab ul .tab1 .type ul li,#mainTab ul .tab2 .type ul li,#mainTab ul .tab6 .type ul li .cap2 ul li{width: 400px}
+#mainTab ul .tab3 .type ul li,#mainTab ul .tab6 .type ul li .cap1 ul li,.featherlight .featherlight-content .cap1 ul li,.featherlight .featherlight-content .cap2 ul li{width: 25%}
+#mainTab ul .tab5 .type ul li,#mainTab ul .tab6 .type ul li .cap3 ul li,.featherlight .featherlight-content .cap3 ul li{width: 50%}
+/* .tab6 .modal */
+#mainTab ul .tab6 .type .modal{width: 545px;margin: 0 auto}
+#mainTab ul .tab6 .type .modal li{margin-left: 130px}
+#mainTab ul .tab6 .type .modal li:first-child{margin-left:0}
+#mainTab ul .tab6 .type .modal li a{display: block;width: 95px;font-size: 15px}
+#mainTab ul .tab6 .type .modal li div{width: 1200px}
+#mainTab ul .tab6 .type .modal li div h4{font-size: 35px}
+#mainTab ul .tab6 .type .modal>li>a+div{display: none}
+
+.featherlight .featherlight-content{width: 1200px}
+.featherlight .featherlight-content .featherlight-inner{text-align: center}
+.featherlight .featherlight-content .featherlight-inner h4{font-size: 30px;margin-bottom: 50px}
+.featherlight .featherlight-content .cap3 h4{margin-bottom: 30px}
+.featherlight .featherlight-content .featherlight-inner h4+p{font-family: NotoSansL;font-size: 15px;padding-bottom: 40px}
+.featherlight .featherlight-content .featherlight-inner ul li{float: left}
+.featherlight .featherlight-content .featherlight-inner ul li strong,.featherlight .featherlight-content .featherlight-inner ul li span{display: block}
+.featherlight .featherlight-content .featherlight-previous,.featherlight .featherlight-content .featherlight-next{width: 100px}
+.featherlight .featherlight-content .featherlight-next{left: 1075px}
+.featherlight .featherlight-content .featherlight-previous span,.featherlight .featherlight-content .featherlight-next span{font-size: 50px}
+.featherlight .featherlight-content .featherlight-previous:hover,.featherlight .featherlight-content .featherlight-next:hover{background: rgba(0,0,0,0.3)}

@@ -1,0 +1,92 @@
+@charset "utf-8";
+@font-face{
+    font-family: NotoSansR;
+    src: url("../font/NotoSansKR-Regular.eot");
+    src: local("※"),
+        url("../font/NotoSansKR-Regular.woff2") format("woff2"),
+        url("../font/NotoSansKR-Regular.woff") format("woff"),
+        url("../font/NotoSansKR-Regular.otf") format("opentype")
+}
+@font-face{
+    font-family: NotoSansL;
+    src: url("../font/NotoSansKR-Light.eot");
+    src: local("※"),
+        url("../font/NotoSansKR-Light.woff2") format("woff2"),
+        url("../font/NotoSansKR-Light.woff") format("woff"),
+        url("../font/NotoSansKR-Light.otf") format("opentype")
+}
+@font-face{
+    font-family: NotoSansB;
+    src: url("../font/NotoSansKR-Bold.eot");
+    src: local("※"),
+        url("../font/NotoSansKR-Bold.woff2") format("woff2"),
+        url("../font/NotoSansKR-Bold.woff") format("woff"),
+        url("../font/NotoSansKR-Bold.otf") format("opentype")
+}
+
+/* 태그 초기화 */
+body,h1,h2,h3,h4,ul,p,button{padding: 0;margin: 0;}
+body{font-family: NotoSansR,"나눔고딕",NanumGothic,"맑은 고딕","Malgun Gothic",Arial;font-size: 18px;color: #333}
+h1,h2{font-size: inherit}
+h1,h2,strong{font-weight: normal}
+a:link,a:visited,a:hover,a:active{text-decoration: none;color: inherit}
+ul{list-style: none}
+button{cursor: pointer;border: none;background: none;font-family: inherit;color: inherit;font-size: inherit}
+img{border: none;vertical-align: top}
+address{font-style: normal}
+header,nav,section,footer{display: block}
+
+/* 공통클래스 */
+.f_red{color:#ee1c25}
+.f_l{float: left}
+.f_r{float: right}
+.p_a{position: absolute}
+.p_r{position: relative}
+.d_b{display: block}
+.clear:after{content: "";display: block; clear:both}
+.area{width: 1200px;margin: 0 auto}
+.blind{font-size: 0;line-height: 0;width: 1px;height: 1px;overflow: hidden;position: absolute;top: 0;left: -9999px;text-indent: -9999px}
+
+.classico{color: #d51b0c}
+.intenso{color: #661216}
+.decaff{color: #028dcf}
+.lungo{color: #283a87}
+.brasile{color: #79402a}
+.guatemala{color: #582630}
+.colombia{color: #913b26}
+.etiopia{color: #784815}
+
+/* #skip */
+#skip a{position: absolute;top: 0;left: -9999px;z-index: 300}
+#skip a:focus{left: 0;right: 0;height: 30px;line-height: 30px;text-align: center;color: #fff;background: #ee1c25;font-size:12px}
+
+/* #header */
+#header{position: absolute;top: 0;left: 0;right: 0;height: 100px;z-index: 200;background: #fff}
+#header.active:before{content: "";position: absolute;bottom:-280px;left: 0;right: 0;height:280px;background: rgba(255, 255, 255,0.8);}
+
+/* .logo */
+.logo{position: absolute;top: 20px;left: 50%;margin-left: -30px;z-index:10}
+.logo a{display: block;width: 60px;height: 60px}
+
+/* #gnb */
+#gnb{position: relative;width: 1200px;height: 100px;margin:0 auto;text-align: center}
+#gnb>ul>li{float: left;}
+#gnb ul li a{display: block;width: 130px}
+#gnb>ul>.gnb2,#gnb>ul>.gnb3,#gnb>ul>.gnb5,#gnb>ul>.gnb6{padding-left: 50px}
+#gnb>ul>.gnb4{margin-left: 220px}
+#gnb>ul>li>a{position: relative;padding: 35px 0;color: #000;-webkit-transition: color .5s;-moz-transition: color .5s;-o-transition: color .5s;transition: color .5s}
+#gnb>ul>li:hover>a,#gnb>ul>li>a:focus,#gnb>ul>li.on>a{color: #ee1c25}
+#gnb>ul>li>a:after{content: "";display: block;width: 0;height: 3px;background: #ee1c25;margin: 0 auto;-webkit-transition: width .5s;-moz-transition: width .5s;-o-transition: width .5s;transition: width .5s}
+#gnb>ul>li>a.shortcut:after{height: 0}
+#gnb>ul>li:hover>a:after,#gnb>ul>li>a:focus:after,#gnb>ul>li.on>a:after{width: 100%}
+#gnb ul li ul li a{color: #777;height: 50px;line-height: 50px;font-size: 16px;}
+#gnb ul .gnb1 ul li:last-child a{line-height: 1.5;}
+#gnb ul li ul li:hover a,#gnb ul li ul li a:focus{color: #ee1c25;-webkit-transition: color .5s;-moz-transition: color .5s;-o-transition: color .5s;transition: color .5s}
+
+/* #content */
+#content{min-width: 1200px;margin: 0 auto;padding: 100px 0}
+
+/* #footer */
+#footer{font-size: 14px;color: #555;height: 230px;box-sizing: border-box;text-align: center;border-top: 1px solid #aaa;}
+#footer img{margin-top: 30px}
+#footer address{padding: 10px 0}
