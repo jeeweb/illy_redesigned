@@ -17,7 +17,7 @@ $(document).ready(function () {
 			$(this).addClass('on').siblings().removeClass('on');
 		});
 		
-		$gnb.on('mouseleave', function () {
+		$header.on('mouseleave', function () {
 			$gnbDep2.slideUp();
 			$header.removeClass('active');
 			$gnb.find('> li.on').removeClass('on');

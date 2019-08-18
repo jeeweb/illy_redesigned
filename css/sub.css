@@ -51,7 +51,7 @@
 #mainTab>ul>li>.btn_cof>*{position:absolute;bottom: 0}
 #mainTab ul li .btn_cof img{display: block}
 #mainTab ul li .btn_cof .over{left: 0;right: 0;bottom: -30px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;opacity: 0;filter: alpha(opacity=0);-webkit-transition: bottom 0.5s;-moz-transition: bottom 0.5s;-o-transition: bottom 0.5s;transition: bottom 0.5s}
-#mainTab ul li .btn_cof:hover .over,#mainTab ul li .btn_cof:focus .over{opacity: 1;filter: alpha(opacity=100);bottom: -12px;}
+#mainTab ul li:hover .btn_cof .over,#mainTab ul li .btn_cof:focus .over,#mainTab ul li.on .btn_cof .over{opacity: 1;filter: alpha(opacity=100);bottom: -12px;}
 
 #mainTab ul li .type{position: absolute;top: 210px;left: 0;width: 1200px;height: 666px;text-align: center}
 #mainTab ul li .type h3{font-family: NotoSansB;font-size: 45px}
