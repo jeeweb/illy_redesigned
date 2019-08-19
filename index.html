@@ -24,6 +24,14 @@
                 pager: true,
                 autoHover: true
             });
+
+            var $best = $('#cnt2 .best .best_tab');
+            $best.find('> li > .btn_tab1').show().parent().siblings().children('ul').hide();
+            $best.find('> li > button').on('click', function (e) {
+                e.preventDefault();
+                $(this).next('ul').show().parent().addClass('on');
+                $(this).parent().siblings().removeClass('on').children('ul').hide();
+            })
         });
     </script>
 </head>
@@ -108,7 +116,7 @@
             <p>일리커피의 베스트 판매제품을 소개합니다.</p>
             <div class="best area">
                 <ul class="best_tab clear p_r">
-                    <li>
+                    <li class="on">
                         <button type="button" id="tab1">Coffee</button>
                         <ul class="btn_tab1">
                             <li class="best1_1">
@@ -150,18 +158,26 @@
                         <ul class="btn_tab2">
                             <li class="best2_1">
                                 <a href="">
-                                    <p class="best_ctg">Ground Coffee</p>
-                                    <p class="best_name">클라시코</p>
-                                    <p class="detail_txt">벨벳처럼 부드럽고<br>완벽하게 균형 잡힌 맛의<br>클래식 로스트</p>
-                                    <img src="images/main/best1_1.png" alt="">
+                                    <p class="best_ctg">Francis Francis Y3.2</p>
+                                    <p class="best_name intenso">프란시스 Y3.2</p>
+                                    <p class="detail_txt">버튼 터치 하나로<br>에스프레소와 커피를 한번에</p>
+                                    <img src="images/main/best2_1.png" alt="">
                                 </a>
                             </li>
                             <li class="best2_2">
                                 <a href="">
-                                    <p class="best_ctg">Whole Bean</p>
-                                    <p class="best_name">인텐소</p>
-                                    <p class="detail_txt">풍부하고 진한 맛의<br>볼드 로스트</p>
-                                    <img src="images/main/best1_2.png" alt="">
+                                    <p class="best_ctg">Francis Francis X7.1</p>
+                                    <p class="best_name classico">프란시스 X7.1</p>
+                                    <p class="detail_txt">완벽한 에스프레소를 위한 머신<br>(Iperespresso Capsule 전용)</p>
+                                    <img src="images/main/best2_2.png" alt="">
+                                </a>
+                            </li>
+                            <li class="best2_3">
+                                <a href="">
+                                    <p class="best_ctg">Francis Francis X9</p>
+                                    <p class="best_name etiopia">프란시스 X9</p>
+                                    <p class="detail_txt">아름다운 타원형 곡선의<br>크롬 도금 알루미늄 머신</p>
+                                    <img src="images/main/best2_3.png" alt="">
                                 </a>
                             </li>
                         </ul>
@@ -171,18 +187,26 @@
                         <ul class="btn_tab3">
                             <li class="best3_1">
                                 <a href="">
-                                    <p class="best_ctg">Ground Coffee</p>
-                                    <p class="best_name">클라시코</p>
-                                    <p class="detail_txt">벨벳처럼 부드럽고<br>완벽하게 균형 잡힌 맛의<br>클래식 로스트</p>
-                                    <img src="images/main/best1_3.png" alt="">
+                                    <p class="best_ctg">Espresso Cup</p>
+                                    <p class="best_name classico">일리 로고 에스프레소 컵</p>
+                                    <p class="detail_txt">한잔의 커피를 특별하게 만들어주는<br>아름답고 우아한 일리 로고 컵</p>
+                                    <img src="images/main/best3_1.png" alt="">
                                 </a>
                             </li>
                             <li class="best3_2">
                                 <a href="">
-                                    <p class="best_ctg">Whole Bean</p>
-                                    <p class="best_name">인텐소</p>
-                                    <p class="detail_txt">풍부하고 진한 맛의<br>볼드 로스트</p>
-                                    <img src="images/main/best1_4.png" alt="">
+                                    <p class="best_ctg">Freddo Glass</p>
+                                    <p class="best_name lungo">일리 프레도잔 150cc</p>
+                                    <p class="detail_txt">내구성과 투명함이 뛰어난<br>일리만의 특별한 프레도 글라스</p>
+                                    <img src="images/main/best3_2.png" alt="">
+                                </a>
+                            </li>
+                            <li class="best3_2">
+                                <a href="">
+                                    <p class="best_ctg">Illy Artcollection</p>
+                                    <p class="best_name guatemala">키키스미스 카푸치노 컵</p>
+                                    <p class="detail_txt">꽃과 나비, 해와 달을 장식으로 한<br>키키스미스 아트 컬렉션</p>
+                                    <img src="images/main/best3_3.png" alt="">
                                 </a>
                             </li>
                         </ul>
@@ -206,28 +230,28 @@
             <p>인스타그램에서 일리커피를 만나보세요.</p>
             <ul class="sns clear area">
                 <li>
-                    <a href="#"><img src="images/main/sns1.jpg" alt="일리카페 여의도점 오픈행사"></a>
+                    <a href="#"><img src="images/main/sns1.jpg" alt="일리카페 여의도점 오픈행사" width="280" height="280"></a>
                 </li>
                 <li>
-                    <a href="#"><img src="images/main/sns2.jpg" alt="자전거 앞 바구니에 담겨있는 일리커피머신"></a>
+                    <a href="#"><img src="images/main/sns2.jpg" alt="자전거 앞 바구니에 담겨있는 일리커피머신" width="280" height="280"></a>
                 </li>
                 <li>
-                    <a href="#"><img src="images/main/sns3.jpg" alt="진정한 이탈리아 커피의 대명사 일리를 여의도에서 만나다. 2019.5.27 오후3시부터 4시반까지 일리카페 여의도점 오픈행사에 여러분을 초대합니다."></a>
+                    <a href="#"><img src="images/main/sns3.jpg" alt="진정한 이탈리아 커피의 대명사 일리를 여의도에서 만나다. 2019.5.27 오후3시부터 4시반까지 일리카페 여의도점 오픈행사에 여러분을 초대합니다." width="280" height="280"></a>
                 </li>
                 <li>
-                    <a href="#"><img src="images/main/sns4.jpg" alt="Grand Open 여의도점, 서울시 영등포구 의사당대로 127, 1층 1-107호 (여의도동, 롯데캐슬 엠파이어)"></a>
+                    <a href="#"><img src="images/main/sns4.jpg" alt="Grand Open 여의도점, 서울시 영등포구 의사당대로 127, 1층 1-107호 (여의도동, 롯데캐슬 엠파이어)" width="280" height="280"></a>
                 </li>
                 <li class="pt26">
-                    <a href="#"><img src="images/main/sns5.jpg" alt="5월 가정의달 이벤트 일리샵 웨딩 프로모션. 2019년 5월 1일 수요일부터 5월 31일 금요일까지 진행"></a>
+                    <a href="#"><img src="images/main/sns5.jpg" alt="5월 가정의달 이벤트 일리샵 웨딩 프로모션. 2019년 5월 1일 수요일부터 5월 31일 금요일까지 진행" width="280" height="280"></a>
                 </li>
                 <li class="pt26">
-                    <a href="#"><img src="images/main/sns6.jpg" alt="일리 에스프레소와 달콤한 아이스크림의 만남, 아포가또"></a>
+                    <a href="#"><img src="images/main/sns6.jpg" alt="일리 에스프레소와 달콤한 아이스크림의 만남, 아포가또" width="280" height="280"></a>
                 </li>
                 <li class="pt26">
-                    <a href="#"><img src="images/main/sns7.jpg" alt="가장 완벽한 커피 + 물 = 일리 에스프레소"></a>
+                    <a href="#"><img src="images/main/sns7.jpg" alt="가장 완벽한 커피 + 물 = 일리 에스프레소" width="280" height="280"></a>
                 </li>
                 <li class="pt26">
-                    <a href="#"><img src="images/main/sns8.jpg" alt="오늘도 나만의 홈 카페로 일리커피를 즐겨보세요"></a>
+                    <a href="#"><img src="images/main/sns8.jpg" alt="오늘도 나만의 홈 카페로 일리커피를 즐겨보세요" width="280" height="280"></a>
                 </li>
             </ul> 
         </article>

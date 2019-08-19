@@ -21,9 +21,9 @@
                 $('.gallery').featherlightGallery();
 
 				//제품 링크를 클릭하면 하단 상세 내용이 보여지도록 스크롤 자동 이동
-				$("#mainTab ul li .btn_cof").on("click", function  () {
-					var moveY = $(this).closest("#mainTab").offset().top - 50;
-					$("html, body").stop().animate({scrollTop: moveY}, 600);
+				$('#mainTab ul li .btn_cof').on('click', function  () {
+					var moveY = $(this).closest('#mainTab').offset().top - 50;
+					$('html, body').stop().animate({scrollTop: moveY}, 600);
 					return false;
 				});
             });
