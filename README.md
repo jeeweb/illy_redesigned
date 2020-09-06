@@ -1,2 +1,5 @@
-# pj1
-1st project_illy Renewal
+# illy
+### 커피브랜드 일리 웹사이트 리뉴얼
+
+작업페이지: 메인, 브랜드소개, 제품소개(커피)  
+사용스텍: HTML, CSS, jQuery
